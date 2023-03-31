@@ -1,0 +1,20 @@
+/* barra navegación clases */
+ul {
+    display: flex;
+    list-style: none;
+}
+/* barra navegación clases */
+ul li {
+    margin: 5px;
+}
+
+/* Centrar contenedores bootstrap */
+.container {
+    margin-top: 10px;
+}
+
+/* Espacio elementos del formulario */
+.form-group {
+    margin-bottom: 10px;
+
+}
