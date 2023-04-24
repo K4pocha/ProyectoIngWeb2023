@@ -10,7 +10,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
         <!-- Hoja de estilos CSS -->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="less/styles.css">
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
       <!-- Barra de navegación -->
@@ -40,8 +43,11 @@
                           <li class="nav-item">
                             <a class="nav-link" href="miscultivos.html">Mis cultivos</a>
                           </li>
-                          <li class="nav-item" id="register-button">
-                            <a class="nav-link" href="registro.html">Registro / Ingreso </a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registro</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="iniciar-sesion.html">Ingreso</a>
                           </li>
                         </ul>
                     </div>
@@ -66,73 +72,33 @@
                 <img src="images/chile.jpg">
               </div>
               <div class="col-md-6">
-                <label>Selecciona tu región:</label><br>
-                <select class="select-css">
+                <label for="region">Selecciona tu región:</label><br>
+                <select class="select-css" id="region-select">
                   <option>Seleccione una región</option>
-                  <option>XV. Arica y Parinacota</option>
-                  <option>I. Tarapacá</option>
-                  <option>II. Antofagasta</option>
-                  <option>III. Atacama</option>
-                  <option>IV. Coquimbo</option>
-                  <option>V. Valparaíso</option>
-                  <option>Región Metropolitana</option>
-                  <option>VI. O'higgins</option>
-                  <option>VII. Maule</option>
-                  <option>VIII. Bío-Bío</option>
-                  <option>IX. Araucanía</option>
-                  <option>XIV. Región de los Ríos</option>
-                  <option>X. Región de los Lagos</option>
-                  <option>XI. Aisén</option>
-                  <option>XII. Magallanes</option>
+                  <option value="region15">XV. Arica y Parinacota</option>
+                  <option value="region1">I. Tarapacá</option>
+                  <option value="region2">II. Antofagasta</option>
+                  <option value="region3">III. Atacama</option>
+                  <option value="region4">IV. Coquimbo</option>
+                  <option value="region5">V. Valparaíso</option>
+                  <option value="regionM">Región Metropolitana</option>
+                  <option value="region6">VI. O'higgins</option>
+                  <option value="region7">VII. Maule</option>
+                  <option value="region8">VIII. Bío-Bío</option>
+                  <option value="region9">IX. Araucanía</option>
+                  <option value="region14">XIV. Región de los Ríos</option>
+                  <option value="region10">X. Región de los Lagos</option>
+                  <option value="region11">XI. Aisén</option>
+                  <option value="region12">XII. Magallanes</option>
                 </select>
-                <div class="info-region">
-                  <label>Informacion de la region</label>
-                  <p>
-                    Breve descripcion sobre informacion de la region,
-                    caracteristicas del clima y que cosas se pueden plantar.
-                  </p>
+                <div class="descr-region">
+                </div>
+                <div class="alimentos">
                 </div>
               </div>
           </div>
-          <div class="que-plantar">
-            <div class="row">
-              <div class="separador"></div>
-            </div>
-            <div class="row">
-              <h2>Alimentos recomendados</h2>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <img src="images/lechuga.jpg">
-                <p>
-                  Descripcion de lechuga
-                </p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/papa.jpg">
-                <p>
-                  Descripcion de papa
-                </p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/zanahoria.jpg">
-                <p>
-                  Descripcion de zanahoria
-                </p>
-              </div>
-              <div class="col-md-3">
-                <img src="images/tomate.jpg">
-                <p>
-                  Descripcion de tomate
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="container">
-
         </div>
-
         <!-- Footer -->
         <div class="container">
           <div class="row">
@@ -148,7 +114,6 @@
           </div>
         </div>
 
-        <!-- JS -->
-        <script src="script.js"></script>
+        
     </body>
 </html>
